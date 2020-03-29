@@ -450,8 +450,9 @@ git fetch origin
 git reset --hard origin/master</code></pre><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="1-push时，不用上传到服务器的文件或目录如何设置？"><a href="#1-push时，不用上传到服务器的文件或目录如何设置？" class="headerlink" title="1. push时，不用上传到服务器的文件或目录如何设置？"></a>1. push时，不用上传到服务器的文件或目录如何设置？</h3><p> 创建 .gitignore文件。如：</p>
 <pre><code>
 *.temp
-/node_modules</code></pre><p> 规则是</p>
-
+/node_modules</code></pre><h3 id="2-如何将本地已有仓库添加到远程仓库？"><a href="#2-如何将本地已有仓库添加到远程仓库？" class="headerlink" title="2. 如何将本地已有仓库添加到远程仓库？"></a>2. 如何将本地已有仓库添加到远程仓库？</h3><pre><code>
+  1. git remote add origin git@github.com/xxxx.git 
+  2. git push -u origin master</code></pre>
             </div>
             <hr/>
 
